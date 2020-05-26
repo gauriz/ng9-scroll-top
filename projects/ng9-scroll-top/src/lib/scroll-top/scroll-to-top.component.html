@@ -1,0 +1,28 @@
+<div class="fab" *ngIf='!type' [style.background-color]='backgroundColor' [style.height]='height + "px"'
+    [style.width]='width + "px"' [style.line-height]='lineHeight + "px"' [style.font-size]='fontSize + "px"'
+    [style.border-radius]='borderRadius' [style.color]='color' [style.right]='right  + "px"'
+    [style.bottom]='bottom + "px"' [ngClass]="[windowScrolled || hovered? ' show-scrollTop' : '' ]"
+    (click)="scrollToTop()" (click)='hovering($event)'>
+    {{text}} <img *ngIf='svgIcon' [src]='svgIcon' />
+</div>
+
+<button *ngIf='type' id='button' class='float'
+    [ngClass]="[type ? type : '', windowScrolled || hovered? 'show-scrollTop' : '']"
+    [style.border-radius]='borderRadius' [style.height]='height + "px"' [style.width]='width + "px"'
+    [style.right]='right + "px"' [style.color]='color' [style.background-color]='backgroundColor'
+    [style.bottom]='bottom + "px"' (click)="scrollToTop();"> {{text}} <img *ngIf='svgIcon' [src]='svgIcon' />
+</button>
+
+<ng-container *ngIf='hovered'>
+
+    <div class="button_cont">
+        <a class="float example_a" *ngFor='let bp of breakpoints; let index = index;' [style.right]='right + "px"'
+            [ngClass]="[windowScrolled  || hovered? ' show-scrollTop' : '' ]"
+            [style.bottom]="bottom +  height + 28 + 'px'" [style.margin-bottom]='60 * (index +1) + "px"'
+            [style.background-color]='backgroundColor' [style.color]='color'
+            (click)="scrollToTop(index);hovered = false">
+            {{bp}}
+        </a>
+    </div>
+
+</ng-container>
