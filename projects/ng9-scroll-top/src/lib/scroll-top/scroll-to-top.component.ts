@@ -42,7 +42,7 @@ export class ScrollToTopComponent implements OnChanges {
     }
   }
 
-  scrollToTop(index) {
+  scrollToTop(index?) {
     if (this.breakpoints && this.breakpoints[index]) {
       this.viewportScroller.scrollToAnchor(this.breakpoints[index]);
       if (document.getElementById('button')) {
