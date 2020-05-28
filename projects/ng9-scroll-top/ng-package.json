@@ -1,6 +1,6 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
-  "dest": "../../dist/scroll-to-top",
+  "dest": "../../dist/ng9-scroll-top",
   "lib": {
     "entryFile": "src/public-api.ts"
   }

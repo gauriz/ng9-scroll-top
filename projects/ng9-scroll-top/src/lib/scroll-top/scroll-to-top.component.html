@@ -1,7 +1,7 @@
 <div class="fab" *ngIf='!type' [style.background-color]='backgroundColor' [style.height]='height + "px"'
     [style.width]='width + "px"' [style.line-height]='lineHeight + "px"' [style.font-size]='fontSize + "px"'
     [style.border-radius]='borderRadius' [style.color]='color' [style.right]='right  + "px"'
-    [style.bottom]='bottom + "px"' [ngClass]="[windowScrolled || hovered? ' show-scrollTop' : '' ]"
+    [style.bottom]='bottom + "px"' [ngClass]="[windowScrolled || hovered? 'show-scrollTop' : '' ]"
     (click)="scrollToTop()" (click)='hovering($event)'>
     {{text}} <img *ngIf='svgIcon' [src]='svgIcon' />
 </div>

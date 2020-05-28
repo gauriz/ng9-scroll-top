@@ -39,6 +39,7 @@ export class ScrollToTopComponent implements OnChanges {
       this.windowScrolled = true;
     } else if (this.windowScrolled && window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop < 10) {
       this.windowScrolled = false;
+      this.hovered = false;
     }
   }
 
@@ -48,9 +49,18 @@ export class ScrollToTopComponent implements OnChanges {
       if (document.getElementById('button')) {
         document.getElementById('button').blur();
       }
-    } else if (this.breakpoints) {
-      this.hovered = true;
-    } else {
+    } else if (this.breakpoints && this.hovered) {
+      (function smoothscroll() {
+        const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+          window.requestAnimationFrame(smoothscroll);
+          window.scrollTo(0, currentScroll - (currentScroll / 8));
+        }
+        if (document.getElementById('button')) {
+          document.getElementById('button').blur();
+        }
+      })();
+    } else if (!this.breakpoints) {
       (function smoothscroll() {
         const currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
         if (currentScroll > 0) {
@@ -62,11 +72,13 @@ export class ScrollToTopComponent implements OnChanges {
         }
       })();
     }
+    if (this.breakpoints) {
+      this.hovered = true;
+    }
   }
 
   hovering(event) {
-    console.log(event);
-    this.hovered = true
+    this.hovered = true;
   }
 
 }

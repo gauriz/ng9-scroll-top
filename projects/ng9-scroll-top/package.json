@@ -1,6 +1,6 @@
 {
   "name": "ng9-scroll-top",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "peerDependencies": {
     "@angular/common": "^9.1.9",
     "@angular/core": "^9.1.9"
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gauriz/ng9-scroll-to-top"
+    "url": "https://github.com/gauriz/ng9-scroll-top"
   },
   "license": "MIT",
   "author": {
@@ -25,6 +25,6 @@
     "angular scroll top"
   ],
   "bugs": {
-    "url": "https://github.com/gauriz/ng9-scroll-to-top/issues"
+    "url": "https://github.com/gauriz/ng9-scroll-top/issues"
   }
 }

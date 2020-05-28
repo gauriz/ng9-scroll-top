@@ -1,27 +1,54 @@
-# Ng9ScrollTop
+# 'Scroll To Top' Library Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+# ng9-scroll-top
 
-## Development server
+ng9-scoll-top Library is made using Angular CLI 9.1.7
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+# Demo (example)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ Watch this [demo page](https://gauriz.github.io/ng9-scroll-to-top-demo/)
+ 
+Or play with it live on [stackblitz.com/edit/ng9-scroll-top](https://stackblitz.com/edit/ng9-scroll-top)
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## Installation
 
-## Running unit tests
+> ng add ng9-scroll-top
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+import  {  ScrollToTopModule  }  from  'ng9-scroll-top';
 
-## Running end-to-end tests
+@NgModule({
+imports:  [ ScrollToTopModule, ... ],
+providers:  [... ],
+bootstrap:  [AppComponent]
+})
+export  class  AppModule  {  }
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Usage
 
-## Further help
+### [](https://www.npmjs.com/package/ng9-scroll-top#component-way)Component way
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+In **component.html**  you just need to add the selector of the button wherever needed.
+
+<ng9-scroll-top></ng9-scroll-top>
+
+
+## Options
+
+OPTION|TYPE|DEFAULT| DESCRIPTION| UNIT|
+|-|-|-|-|-|
+|backgroundColor|`string`|purple| Background Color|
+|color |`string` |white| Color|
+|height |`number` |50| Height |px
+|width |`number` |50| Width |px
+|lineHeight |`number` |55| Minimal height of line boxes within the element|px
+|fontSize |`number` |30| Font size of the icon/character given as text|px
+|borderRadius |`string` |20%| Border Radius in % (0 : Square, 50% : circle)|
+|right |`number` |50| Px value from the right-most border|px
+|bottom|`number` |50| Px value from the bottom-most border|px
+|text |`string` |↟ | Will be taken to display if no svgIcon link is specified|
+|svgIcon|`string` |null| Icon link to be displayed|
+|type |`string` |pulse| Button hover style |
+|breakpoints|`string[]` |null| Breakpoints (Fragment IDs)|
+
