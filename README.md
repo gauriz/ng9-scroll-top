@@ -41,16 +41,19 @@ In **component.html**  you just need to add the selector of the button wherever 
 
 ## Options
 
-OPTION|TYPE|DEFAULT| DESCRIPTION| 
-|-|-|-|-|
+OPTION|TYPE|DEFAULT| DESCRIPTION| UNIT|
+|-|-|-|-|-|
 |backgroundColor|`string`|purple| Background Color|
 |color |`string` |white| Color|
-|height |`string` |50px| Height |
-|width |`string` |50px| Width |
-|lineHeight |`string` |55px| Minimal height of line boxes within the element|
-|fontSize |`string` |30px| Font size of the icon/character given as text|
+|height |`number` |50| Height |px|
+|width |`number` |50| Width |px|
+|lineHeight |`number` |55| Minimal height of line boxes within the element|px|
+|fontSize |`number` |30| Font size of the icon/character given as text|px|
 |borderRadius |`string` |20%| Border Radius in % (0 : Square, 50% : circle)|
-|right |`string` |50px| Px value from the right-most border|
-|bottom|`string` |50px| Px value from the bottom-most border|
-|text |`string` |↟ | Will be taken to display if no svgIcon link is specified|
+|right |`number` |50| Px value from the right-most border|px|
+|bottom|`number` |50| Px value from the bottom-most border|px|
+|text |`string` |↟| Will be taken to display if no svgIcon link is specified|
 |svgIcon|`string` |null| Icon link to be displayed|
+|type|`string` |pulse| Type of hovered button|
+|breakpoints|`string[]` |null| Breakpoints/ Fragment ID's to be navigated to|
+
