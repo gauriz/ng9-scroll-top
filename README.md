@@ -1,3 +1,4 @@
+
 # 'Scroll To Top' Library
 
 # ng9-scroll-top
@@ -57,3 +58,5 @@ OPTION|TYPE|DEFAULT| DESCRIPTION| UNIT|
 |type|`string` |pulse| Type of hovered button|
 |breakpoints|`string[]` |null| Breakpoints/ Fragment ID's to be navigated to|
 
+
+*If no breakpoints are provided, then he scroll will be set to the top of the document.*
