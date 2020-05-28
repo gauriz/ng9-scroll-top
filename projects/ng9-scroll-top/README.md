@@ -16,7 +16,10 @@ Or play with it live on [stackblitz.com/edit/ng9-scroll-top](https://stackblitz.
 
 > ng add ng9-scroll-top
 
+```javascript
+
 import  {  ScrollToTopModule  }  from  'ng9-scroll-top';
+............................................................................
 
 @NgModule({
 imports:  [ ScrollToTopModule, ... ],
@@ -24,6 +27,8 @@ providers:  [... ],
 bootstrap:  [AppComponent]
 })
 export  class  AppModule  {  }
+
+```
 
 ## Usage
 
