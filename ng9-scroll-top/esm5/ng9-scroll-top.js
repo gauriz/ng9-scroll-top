@@ -1,0 +1,6 @@
+/**
+ * Generated bundle index. Do not edit.
+ */
+export * from './public-api';
+export { ScrollToTopComponent as ɵa } from './lib/scroll-top/scroll-to-top.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmc5LXNjcm9sbC10b3AuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZzktc2Nyb2xsLXRvcC8iLCJzb3VyY2VzIjpbIm5nOS1zY3JvbGwtdG9wLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztHQUVHO0FBRUgsY0FBYyxjQUFjLENBQUM7QUFFN0IsT0FBTyxFQUFDLG9CQUFvQixJQUFJLEVBQUUsRUFBQyxNQUFNLDBDQUEwQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBHZW5lcmF0ZWQgYnVuZGxlIGluZGV4LiBEbyBub3QgZWRpdC5cbiAqL1xuXG5leHBvcnQgKiBmcm9tICcuL3B1YmxpYy1hcGknO1xuXG5leHBvcnQge1Njcm9sbFRvVG9wQ29tcG9uZW50IGFzIMm1YX0gZnJvbSAnLi9saWIvc2Nyb2xsLXRvcC9zY3JvbGwtdG8tdG9wLmNvbXBvbmVudCc7Il19

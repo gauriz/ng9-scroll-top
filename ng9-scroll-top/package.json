@@ -1,0 +1,40 @@
+{
+  "name": "ng9-scroll-top",
+  "version": "1.2.3",
+  "peerDependencies": {
+    "@angular/common": "^9.1.9",
+    "@angular/core": "^9.1.9"
+  },
+  "dependencies": {
+    "tslib": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gauriz/ng9-scroll-top"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Gauri K Kumar",
+    "email": "gauri.x3@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "angular 9",
+    "scroll to top",
+    "go to top",
+    "angular scroll top"
+  ],
+  "bugs": {
+    "url": "https://github.com/gauriz/ng9-scroll-top/issues"
+  },
+  "main": "bundles/ng9-scroll-top.umd.js",
+  "module": "fesm5/ng9-scroll-top.js",
+  "es2015": "fesm2015/ng9-scroll-top.js",
+  "esm5": "esm5/ng9-scroll-top.js",
+  "esm2015": "esm2015/ng9-scroll-top.js",
+  "fesm5": "fesm5/ng9-scroll-top.js",
+  "fesm2015": "fesm2015/ng9-scroll-top.js",
+  "typings": "ng9-scroll-top.d.ts",
+  "metadata": "ng9-scroll-top.metadata.json",
+  "sideEffects": false
+}
