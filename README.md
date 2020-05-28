@@ -9,7 +9,7 @@ ng9-scoll-top Library is made using Angular CLI 9.1.7
 
  Watch this [demo page](https://gauriz.github.io/ng9-scroll-to-top-demo/)
  
-Or play with it live on [stackblitz.com/edit/ng9-scroll-top](https://stackblitz.com/edit/ng9-scroll-topl)
+Or play with it live on [stackblitz.com/edit/ng9-scroll-top](https://stackblitz.com/edit/ng9-scroll-top)
 
 
 ## Installation
